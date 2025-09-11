@@ -1,4 +1,4 @@
-# File Copier (Tkinter)
+# Lastinator (last file copier)
 
 A small Windows desktop app that copies the _most recently modified file_ from a source folder to a destination folder when you press a button.
 
@@ -9,14 +9,6 @@ A small Windows desktop app that copies the _most recently modified file_ from a
 - Lets the user enter a **From (source)** folder and a **To (destination)** folder in the UI.
 - When **Copy Last File** is clicked, the app finds the most recently modified file in the source folder and copies it to the destination folder.
 - Shows popup messages for success, warnings, and errors.
-
----
-
-## ✅ Features
-
-- Uses only Python standard library (`tkinter`, `os`, `shutil`).
-- Small, single-file example you can extend.
-- Clear instructions for using a Python virtual environment on Windows to avoid installing packages globally.
 
 ---
 
@@ -36,7 +28,8 @@ These steps create and use a virtual environment so you don't install anything i
 ### 1. Clone or copy the project
 
 ```powershell
-git clone https://github.com/your-username/file-copier.git
+git clone https://github.com/JoaoGeraldes/Lastinator.git
+
 cd Lastinator
 ```
 
@@ -99,12 +92,6 @@ With the virtual environment activated:
 python main.py
 ```
 
-A small window will appear with two input fields and a button:
-
-- **From (source folder):** path to the folder to read files from
-- **To (target folder):** path to the folder where the file will be copied
-- **Copy Last File** button to trigger the copy
-
 Notes:
 
 - The source folder must exist and contain at least one file.
@@ -128,7 +115,7 @@ pip install pyinstaller
 pyinstaller --onefile --windowed file_copier.py
 ```
 
-3. The built executable will be at `dist/file_copier.exe`.
+3. The built executable will be at `dist/main.exe`.
 
 > Test the `.exe` on a machine similar to your target environment to ensure it bundles everything correctly.
 
