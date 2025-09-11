@@ -37,7 +37,7 @@ These steps create and use a virtual environment so you don't install anything i
 
 ```powershell
 git clone https://github.com/your-username/file-copier.git
-cd file-copier
+cd Lastinator
 ```
 
 (Or simply copy the files into a folder.)
@@ -96,7 +96,7 @@ pip freeze > requirements.txt
 With the virtual environment activated:
 
 ```powershell
-python file_copier.py
+python main.py
 ```
 
 A small window will appear with two input fields and a button:
