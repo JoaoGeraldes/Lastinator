@@ -9,7 +9,7 @@ class LastinatorGUI:
         self.copy_callback = copy_callback
         self.master.title("Lastinator")
         self.master.geometry("500x250")
-        self.master.resizable(False, False)
+        self.master.resizable(True, True)
         self.master.configure(bg="#212121")
         self.container = Frame(master)
         self.container.pack(expand=True)  # expand fills the available space
@@ -82,6 +82,9 @@ class LastinatorGUI:
             self.button.config(fg=style.get("btn_fg", "white"),
                                bg=style.get("btn_bg", "green"))
             self.master.config(bg=style.get("bg", "#f0f0f0"))
+            self.container.config(bg=style.get("bg", "#f0f0f0"))
+            self.sticky_checkbox.config(
+                fg=style.get("fg", "black"), bg=style.get("bg", "#f0f0f0"))
 
         except Exception as e:
             print("Error loading style.json:", e)
